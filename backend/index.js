@@ -24,11 +24,8 @@ app.use(express.static("public/uploads"));
 
 app.use(
   cors({
-<<<<<<< HEAD
-    origin: "http://localhost:5174",
-=======
-    origin: "http://process.env.Public_Ip:5173",
->>>>>>> 156b2b595a47887090fb12a8d1777d996c53f0e4
+    
+    origin: "http://localhost:5173",
     credentials: true,
   })
 );
