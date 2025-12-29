@@ -9,8 +9,6 @@ services:
       - backend
     networks:
       -  employee_management
-    environment:
-      - BACKEND_URL=http://localhost:5173
     restart: unless-stopped
 
   backend:
