@@ -1,14 +1,16 @@
+version: "3.8"
+
 services:
   frontend:
     build:
-      context: ./frotend
+      context: ./frontend
       dockerfile: Dockerfile
     ports:
       - "5173:5173"
     depends_on:
       - backend
     networks:
-      -  employee_management
+      - employee_management
     restart: unless-stopped
 
   backend:
@@ -30,18 +32,17 @@ services:
     ports:
       - "27017:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=admin
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: admin
     volumes:
       - mongodb_data:/data/db
     networks:
-      -  employee_management
- restart: unless-stopped
+      - employee_management
+    restart: unless-stopped
 
 networks:
-  chat-network:
+  employee_management:
     driver: bridge
 
 volumes:
   mongodb_data:
-        
