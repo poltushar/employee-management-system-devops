@@ -5,7 +5,9 @@ Employee Management System (EMS) built with React.js and Node.js to demonstrate 
 
 # Project Flow Diagram
 
-<img width="1536" height="1024" alt="ChatGPT Image Dec 29, 2025, 05_45_43 PM" src="https://github.com/user-attachments/assets/63345a22-9ea9-4403-9cf4-351e3f57a071" />
+<img width="1530" height="818" alt="ChatGPT Image Dec 29, 2025, 05_45_43 PM" src="https://github.com/user-attachments/assets/8a8677c6-038a-421b-bfe7-7c65efc4aaeb" />
+
+
 
 
 
