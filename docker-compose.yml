@@ -1,16 +1,16 @@
 services:
   frontend:
     build:
-      context: ./frontend
+      context: ./frotend
       dockerfile: Dockerfile
     ports:
-      - "8080:80"
+      - "5173:5173"
     depends_on:
       - backend
     networks:
-      - chat-network
+      -  employee_management
     environment:
-      - BACKEND_URL=http://backend:5001
+      - BACKEND_URL=http://localhost:5173
     restart: unless-stopped
 
   backend:
@@ -18,7 +18,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     ports:
-      - "5001:5001"
+      - "3000:3000"
     depends_on:
       - mongo
     env_file:
@@ -37,4 +37,4 @@ services:
     volumes:
       - mongodb_data:/data/db
     networks:
-      - chat-network
+      -  employee_management
