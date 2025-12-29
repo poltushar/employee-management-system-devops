@@ -36,3 +36,12 @@ services:
       - mongodb_data:/data/db
     networks:
       -  employee_management
+ restart: unless-stopped
+
+networks:
+  chat-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
+        
