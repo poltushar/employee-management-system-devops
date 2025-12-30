@@ -8,16 +8,13 @@ export const login = async (req, res) => {
     const { email, password } = req.body;
     //to check user is match or not
     const user = await User.findOne({ email });
-
     if (!user) {
-      res.status(404).json({ success: false, error: "User Not Found" });
+      return res.status(404).json({ success: false, error: "User Not Found" });
     }
-
     //to check password is match or not
     const isMatch = await bcrypt.compare(password, user.password);
-
     if (!isMatch) {
-      res.status(404).json({ success: false, error: "Wrong Password" });
+      return res.status(404).json({ success: false, error: "Wrong Password" });
     }
     //this is a jwt web token
     const token = jwt.sign(
@@ -25,10 +22,8 @@ export const login = async (req, res) => {
       process.env.JWT_KEY,
       { expiresIn: "10d" }
     );
-
     //return  a data property if everything is correct to show  front end
-
-    res.status(200).json({
+    return res.status(200).json({
       success: true,
       token,
       user: { _id: user._id, name: user.name, role: user.role },

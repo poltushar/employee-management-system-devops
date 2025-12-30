@@ -3,22 +3,24 @@ import User from "./models/User.js";
 import bcrypt from "bcrypt";
 
 const userRegister = async () => {
-  connectDatabase();
+  await connectDatabase();
+
   try {
     const hashPassword = await bcrypt.hash("admin", 10);
-    console.log("d");
+
     const newUser = new User({
       name: "Admin",
-      email: "admin@gmail",
+      email: "admin@gmail.com", // ✅ fixed
       password: hashPassword,
       role: "admin",
     });
-    console.log("d");
 
     await newUser.save();
+    console.log("Admin user created successfully");
   } catch (error) {
     console.log(error);
   }
 };
 
-userRegister();
+export default userRegister;
+

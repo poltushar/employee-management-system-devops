@@ -11,11 +11,13 @@ import changePasswordRoute from "./routes/ChangePassword.js";
 import dashboardRouter from "./routes/dashboard.js";
 
 import attendanceRouter from "./routes/attendance.js";
+import userRegister from "./UserSeed.js";
 
 LeaveRouter;
 
 //Step4:Add Routes
 connectDatabase();
+userRegister();
 
 const app = express();
 app.use(express.static("public/uploads"));
