@@ -36,13 +36,12 @@ The goal of this project is to automate the build, deployment, and monitoring of
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 
-### DevOps & Cloud
+### DevOps 
 - **CI/CD:** Jenkins, GitHub Actions
 - **Containerization:** Docker
 - **Orchestration:** Kubernetes (KIND)
 - **GitOps:** Argo CD
 - **Monitoring:** Prometheus, Grafana
-- **Cloud:** AWS EC2 (optional)
 
 ---
 
@@ -172,6 +171,7 @@ This confirms the complete end-to-end DevOps workflow is working as expected.
 <img width="1919" height="1078" alt="Screenshot 2025-12-30 150626" src="https://github.com/user-attachments/assets/f6110d8b-11ad-43c0-b1c3-5b64a0d13ab2" />
 <img width="1919" height="1079" alt="Screenshot 2025-12-30 150653" src="https://github.com/user-attachments/assets/f3e49471-7477-4ed6-99bc-7c03a3efd1a6" />
 <img width="1919" height="1079" alt="Screenshot 2025-12-30 150726" src="https://github.com/user-attachments/assets/9db40f4e-ea00-49b1-baf1-648e0a35e5d3" />
+
 
 
 
