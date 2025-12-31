@@ -162,7 +162,26 @@ running and accessible.
 
 This confirms the complete end-to-end DevOps workflow is working as expected.
 
-<img width="1919" height="1077" alt="Screenshot 2025-12-30 180813" src="https://github.com/user-attachments/assets/be94b198-345b-487c-b902-8568e5295407" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-30 144432" src="https://github.com/user-attachments/assets/aed02e7e-349f-4e34-af70-4a4c9acee2d2" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-30 144442" src="https://github.com/user-attachments/assets/8be24902-c141-46c7-a9d8-6fd4e998a94e" />
+<img width="1903" height="1061" alt="Screenshot 2025-12-30 144506" src="https://github.com/user-attachments/assets/4fe36d4b-d683-4a5b-9e73-cbd8af1e37c6" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-30 144528" src="https://github.com/user-attachments/assets/64ef8464-b708-46af-8b67-7693ffbc7ef7" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-30 144542" src="https://github.com/user-attachments/assets/f2fdfa85-8d9c-4bfa-8b06-6b2632bfeb1c" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-30 144553" src="https://github.com/user-attachments/assets/3d68c943-f0f5-4f4e-aadb-8b2e03e578fd" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-30 144626" src="https://github.com/user-attachments/assets/3457485e-e49f-4872-a1ea-d309a350c950" />
+<img width="1919" height="1078" alt="Screenshot 2025-12-30 150626" src="https://github.com/user-attachments/assets/f6110d8b-11ad-43c0-b1c3-5b64a0d13ab2" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-30 150653" src="https://github.com/user-attachments/assets/f3e49471-7477-4ed6-99bc-7c03a3efd1a6" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-30 150726" src="https://github.com/user-attachments/assets/9db40f4e-ea00-49b1-baf1-648e0a35e5d3" />
+
+
+
+
+
+
+
+
+
+
 
 
 
