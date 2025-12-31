@@ -97,28 +97,38 @@ from CI to production deployment and monitoring.
 ### 🔹 Jenkins CI Pipeline – Build & Push
 Triggered automatically on GitHub push.
 
-![Jenkins Pipeline](execution-screenshots/jenkins-pipeline-success.png)
+<img width="1919" height="1077" alt="Screenshot 2025-12-29 213220" src="https://github.com/user-attachments/assets/24b4f474-2b93-4dea-a5fd-685a1698b602" />
 
 ---
 
-### 🔹 Docker Images Created & Pushed
-Backend and frontend images built and pushed to registry.
+### 🔹 Docker Image Build & Push (Terminal Output)
+Backend and frontend Docker images are successfully built and pushed to the container registry.
 
-![Docker Images](execution-screenshots/docker-images.png)
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/e1c797ef-303e-4bb8-bb53-942ddad3cada" />
+
+
+---
+
+### 🔹 Docker Registry – Images Available
+Verified images are present in the Docker registry after push.
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/b8b52490-53b1-4821-afdf-b71db8ce4fc3" />
+
 
 ---
 
 ### 🔹 Kubernetes Deployment (Pods & Services)
 Application running successfully inside Kubernetes cluster.
 
-![Kubernetes Pods](execution-screenshots/kubernetes-pods-running.png)
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/ad2e8e1a-34d1-499f-b988-6fa64c5a7e40" />
+
 
 ---
 
 ### 🔹 Argo CD GitOps Sync
 Automatic deployment via GitOps after manifest update.
 
-![Argo CD Sync](execution-screenshots/argo-sync-success.png)
+<img width="1919" height="1077" alt="Screenshot 2025-12-31 093745" src="https://github.com/user-attachments/assets/19f506d3-b94d-4bbd-ae57-c4e49a5856da" />
+
 
 ---
 
@@ -132,7 +142,8 @@ Node.js backend `/metrics` endpoint successfully scraped.
 ### 🔹 Grafana Monitoring Dashboard
 Real-time Node.js application metrics visualization.
 
-![Grafana Dashboard](execution-screenshots/grafana-dashboard.png)
+<img width="1918" height="1078" alt="Screenshot 2025-12-31 170024" src="https://github.com/user-attachments/assets/a30d7366-dbd0-4073-9f10-5d64f5a45dfa" />
+
 
 ---
 
@@ -140,6 +151,7 @@ Real-time Node.js application metrics visualization.
 Metrics exposed from backend application.
 
 ![Node.js Metrics](execution-screenshots/nodejs-metrics-endpoint.png)
+
 
 
 
