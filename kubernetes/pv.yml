@@ -1,0 +1,13 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: my-pv
+  namespace: devopsproject
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+   - ReadWriteOnce
+  hostPath: 
+    path: /data/db   
+        

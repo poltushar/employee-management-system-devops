@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+  namespace: devopsproject
+  labels:
+    app: backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      name: backend
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: tusharpol/devops_mega_project_backend:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: MongoDB_URL
+              valueFrom:
+                secretKeyRef: 
+                  name: secret-file
+                  key: MongoDB_URL
+
+            - name: PORT
+              valueFrom:
+                secretKeyRef:
+                  name: secret-file
+                  key: PORT
+
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: secret-file
+                  key: JWT_KEY  
+
+            - name: CLOUDINARY_NAME 
+              valueFrom:
+                secretKeyRef:
+                  name: secret-file
+                  key: CLOUDINARY_NAME
+
+            - name: CLOUDINARY_API_kEY
+              valueFrom:
+                secretKeyRef:
+                  name: secret-file
+                  key: CLOUDINARY_API_kEY
+
+            - name: CLOUDINARY_API_Secret
+              valueFrom:
+                secretKeyRef:
+                  name: secret-file
+                  key:  CLOUDINARY_API_Secret 
+              
+        
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: devopsproject
+spec:
+  type: NodePort
+  selector:
+    app: backend
+  ports:
+    - port: 3000
+      targetPort: 3000
+      protocol: TCP
+
