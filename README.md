@@ -135,7 +135,8 @@ Automatic deployment via GitOps after manifest update.
 ### 🔹 Prometheus Targets (UP)
 Node.js backend `/metrics` endpoint successfully scraped.
 
-![Prometheus Targets](execution-screenshots/prometheus-targets-up.png)
+<img width="1919" height="1079" alt="Screenshot 2025-12-31 181527" src="https://github.com/user-attachments/assets/c1bd819b-9cf7-4338-83ee-c52846838db9" />
+
 
 ---
 
@@ -150,8 +151,18 @@ Real-time Node.js application metrics visualization.
 ### 🔹 Node.js Metrics Endpoint
 Metrics exposed from backend application.
 
-![Node.js Metrics](execution-screenshots/nodejs-metrics-endpoint.png)
 
+<img width="1918" height="1076" alt="Screenshot 2025-12-31 182035" src="https://github.com/user-attachments/assets/423a62e6-5567-4116-9eb4-2adfaa258835" />
+
+## 🖥️ Final Application Output
+
+After successful CI/CD pipeline execution, Docker image build, Kubernetes
+deployment, and GitOps synchronization using Argo CD, the application is
+running and accessible.
+
+This confirms the complete end-to-end DevOps workflow is working as expected.
+
+<img width="1919" height="1077" alt="Screenshot 2025-12-30 180813" src="https://github.com/user-attachments/assets/be94b198-345b-487c-b902-8568e5295407" />
 
 
 
