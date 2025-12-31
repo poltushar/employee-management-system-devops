@@ -7,6 +7,86 @@ Employee Management System (EMS) built with React.js and Node.js to demonstrate 
 
 <img width="1530" height="818" alt="ChatGPT Image Dec 29, 2025, 05_45_43 PM" src="https://github.com/user-attachments/assets/8a8677c6-038a-421b-bfe7-7c65efc4aaeb" />
 
+# 🚀 End-to-End DevOps Project — MERN Application
+
+This project demonstrates a **complete DevOps lifecycle** for a MERN stack application, covering **CI/CD, containerization, Kubernetes deployment, GitOps, and monitoring** using industry-standard tools.
+
+It is designed to reflect **real-world DevOps practices** and production-level troubleshooting.
+
+---
+
+## 📌 Project Overview
+
+The goal of this project is to automate the build, deployment, and monitoring of a MERN application using DevOps tools.
+
+### Key Highlights:
+- Automated CI/CD pipeline
+- Dockerized backend & frontend
+- Kubernetes-based deployment
+- GitOps with Argo CD
+- Application monitoring using Prometheus & Grafana
+- Node.js application metrics exposed via `/metrics`
+
+---
+
+## 🧰 Tech Stack
+
+### Application
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+
+### DevOps & Cloud
+- **CI/CD:** Jenkins, GitHub Actions
+- **Containerization:** Docker
+- **Orchestration:** Kubernetes (KIND)
+- **GitOps:** Argo CD
+- **Monitoring:** Prometheus, Grafana
+- **Cloud:** AWS EC2 (optional)
+
+---
+
+## 🔄 CI/CD Workflow
+
+1. Developer pushes code to GitHub
+2. Jenkins CI pipeline triggers automatically
+3. Docker images are built and pushed to registry
+4. Kubernetes manifests are updated
+5. Argo CD detects changes and syncs deployment
+6. Application is deployed to Kubernetes cluster
+
+---
+
+## ☸ Kubernetes Architecture
+
+- Backend and frontend deployed as Kubernetes Deployments
+- Services expose applications internally and externally
+- MongoDB runs as a separate service
+- ServiceMonitor used for Prometheus scraping
+
+---
+
+## 📊 Monitoring & Observability
+
+### Prometheus
+- Scrapes Node.js application metrics from `/metrics`
+- Uses ServiceMonitor (Prometheus Operator)
+
+### Grafana Dashboard
+Monitors:
+- Node.js version
+- CPU usage
+- Memory usage
+- Event loop lag
+- Pod restart count
+
+Example metrics:
+```promql
+nodejs_version_info
+process_cpu_seconds_total
+process_resident_memory_bytes
+
+
 
 
 
