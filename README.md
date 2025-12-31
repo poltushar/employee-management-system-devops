@@ -85,4 +85,69 @@ Example metrics:
 nodejs_version_info
 process_cpu_seconds_total
 process_resident_memory_bytes
+```
+
+## 🖥️ Execution Screenshots (Proof of Work)
+
+Below screenshots demonstrate successful execution of the complete DevOps pipeline,
+from CI to production deployment and monitoring.
+
+---
+
+### 🔹 Jenkins CI Pipeline – Build & Push
+Triggered automatically on GitHub push.
+
+![Jenkins Pipeline](execution-screenshots/jenkins-pipeline-success.png)
+
+---
+
+### 🔹 Docker Images Created & Pushed
+Backend and frontend images built and pushed to registry.
+
+![Docker Images](execution-screenshots/docker-images.png)
+
+---
+
+### 🔹 Kubernetes Deployment (Pods & Services)
+Application running successfully inside Kubernetes cluster.
+
+![Kubernetes Pods](execution-screenshots/kubernetes-pods-running.png)
+
+---
+
+### 🔹 Argo CD GitOps Sync
+Automatic deployment via GitOps after manifest update.
+
+![Argo CD Sync](execution-screenshots/argo-sync-success.png)
+
+---
+
+### 🔹 Prometheus Targets (UP)
+Node.js backend `/metrics` endpoint successfully scraped.
+
+![Prometheus Targets](execution-screenshots/prometheus-targets-up.png)
+
+---
+
+### 🔹 Grafana Monitoring Dashboard
+Real-time Node.js application metrics visualization.
+
+![Grafana Dashboard](execution-screenshots/grafana-dashboard.png)
+
+---
+
+### 🔹 Node.js Metrics Endpoint
+Metrics exposed from backend application.
+
+![Node.js Metrics](execution-screenshots/nodejs-metrics-endpoint.png)
+
+
+
+
+
+
+
+
+
+
 
